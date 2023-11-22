@@ -30,12 +30,12 @@ Automatically creates a new LiteDB, a NoSQL database, for each new month of the 
 Transfers worker data and resets hours for the new month while preserving the previous month's records.
 
 ### **Technologies Used**
-Emgu.CV with Eigen Face Recognition
+**Emgu.CV** with **Eigen Face** Recognition
 Utilizes the Emgu.CV library for efficient face detection and recognition.
 Implements the Eigen Face algorithm for accurate facial identification.
-LiteDB Employs LiteDB, a NoSQL database, for flexible and scalable data management.
+**LiteDB** Employs LiteDB, a NoSQL database, for flexible and scalable data management.
 Seamlessly integrates with the system, providing robust storage capabilities.
-WinUI3 for User Interface Features a visually appealing UI powered by WinUI3, enhancing the overall user experience.
+**WinUI3** for User Interface Features a visually appealing UI powered by WinUI3, enhancing the overall user experience.
 
 ### **Project Structure**
 The project is organized into distinct windows, each catering to specific functionalities such as clocking in/out, manager login, worker management, and reporting. The underlying technologies ensure reliable face detection, secure database management, and an intuitive user interface.
