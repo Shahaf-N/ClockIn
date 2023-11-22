@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="ShiftClockFaceDetect.ManagerWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShiftClockFaceDetect"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView x:ConnectionId='2'                                            >
+        <NavigationView.MenuItems>
+            <NavigationViewItem Tag="GetReport" Icon="Document" Content="Hours report"/>
+            <NavigationViewItem Tag="AddWindow" Icon="Add" Content="Add a person"/>
+            <NavigationViewItem Tag="RemoveWindow" Icon="Delete" Content="Remove a person"/>
+        </NavigationView.MenuItems>
+        <Frame x:ConnectionId='3' x:Name="contentFrame"/>
+    </NavigationView>
+</Page>
+

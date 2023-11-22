@@ -1,0 +1,1 @@
+C:\Users\tamir\source\repos\ShiftClockFaceDetect\ShiftClockFaceDetect\ClockIn.csproj;x86

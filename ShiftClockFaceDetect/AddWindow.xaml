@@ -1,0 +1,60 @@
+
+<Page
+    x:Class="ShiftClockFaceDetect.AddWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShiftClockFaceDetect"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <ComboBox Grid.Row="0" x:Name="camselect" SelectionChanged="ComboBox_ChangeCam" Header="Camera Device" PlaceholderText="Select a camera" ItemsSource="{x:Bind cams}"></ComboBox>
+            <Image Grid.Row="1" x:Name="showvid"/>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Click="CaptBtn_Click" x:Name="startvid">Start</Button>
+                <Button Grid.Column="1" Click="CapturePerson_Click" x:Name="captureperson">Capture</Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Name="capturedpersongrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="2" Name="personname">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" Grid.Row="1" x:Name="firstname" PlaceholderText="First Name"/>
+                <TextBox Grid.Column="1" Grid.Row="1" x:Name="lastname" PlaceholderText="Last Name"/>
+                <TextBox Grid.Row="2" Name="IdTextBox" MaxLength="9" PlaceholderText="Id" BeforeTextChanging="TextBox_OnBeforeTextChanging"/>
+            </Grid>
+            <Image Grid.Row="3" x:Name="showselected"/>
+            <Button Grid.Row="4" x:Name="addperson" Click="Add_Click">Add</Button>
+        </Grid>
+    </Grid>
+</Page>

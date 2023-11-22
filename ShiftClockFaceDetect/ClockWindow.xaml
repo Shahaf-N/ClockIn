@@ -1,0 +1,22 @@
+
+<Page
+    x:Class="ShiftClockFaceDetect.ClockWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShiftClockFaceDetect"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="camselect" Grid.Row="0" SelectionChanged="ComboBox_ChangeCam" Header="Camera Device" PlaceholderText="Select a camera" ItemsSource="{x:Bind cams}"></ComboBox>
+        <Image Grid.Row="1" x:Name="showvid"/>
+        <Button Grid.Row="2" Click="CaptBtn_Click" x:Name="startvid">Start</Button>
+    </Grid>
+</Page>

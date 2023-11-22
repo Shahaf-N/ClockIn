@@ -1,0 +1,13 @@
+{
+  "runtimeOptions": {
+    "tfm": "net6.0",
+    "additionalProbingPaths": [
+      "C:\\Users\\tamir\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tamir\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+    ],
+    "configProperties": {
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}

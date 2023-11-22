@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ShiftClockFaceDetect (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ShiftClockFaceDetect (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

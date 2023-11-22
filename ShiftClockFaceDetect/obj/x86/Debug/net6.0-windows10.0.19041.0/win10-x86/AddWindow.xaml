@@ -1,0 +1,61 @@
+﻿
+<Page x:ConnectionId='1'
+    x:Class="ShiftClockFaceDetect.AddWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShiftClockFaceDetect"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <ComboBox x:ConnectionId='9' Grid.Row="0" x:Name="camselect"                                       Header="Camera Device" PlaceholderText="Select a camera"                            ></ComboBox>
+            <Image x:ConnectionId='10' Grid.Row="1" x:Name="showvid"/>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Button x:ConnectionId='11' Grid.Column="0"                       x:Name="startvid">Start</Button>
+                <Button x:ConnectionId='12' Grid.Column="1"                             x:Name="captureperson">Capture</Button>
+            </Grid>
+        </Grid>
+        <Grid x:ConnectionId='2' Grid.Column="1" Name="capturedpersongrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid x:ConnectionId='3' Grid.Row="2" Name="personname">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:ConnectionId='6' Grid.Column="0" Grid.Row="1" x:Name="firstname" PlaceholderText="First Name"/>
+                <TextBox x:ConnectionId='7' Grid.Column="1" Grid.Row="1" x:Name="lastname" PlaceholderText="Last Name"/>
+                <TextBox x:ConnectionId='8' Grid.Row="2" Name="IdTextBox" MaxLength="9" PlaceholderText="Id"                                                  />
+            </Grid>
+            <Image x:ConnectionId='4' Grid.Row="3" x:Name="showselected"/>
+            <Button x:ConnectionId='5' Grid.Row="4" x:Name="addperson"                  >Add</Button>
+        </Grid>
+    </Grid>
+</Page>
+
