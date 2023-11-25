@@ -41,3 +41,5 @@ Seamlessly integrates with the system, providing robust storage capabilities.
 The project is organized into distinct windows, each catering to specific functionalities such as clocking in/out, manager login, worker management, and reporting. The underlying technologies ensure reliable face detection, secure database management, and an intuitive user interface.
 
 ClockIn is a versatile solution designed to optimize shift organization, combining cutting-edge facial recognition with an elegant user interface for an efficient and user-friendly experience.
+
+#### * We start from a point of assumption that unregistred people doesn't try to clock in, that because the face recognition works by telling who is the most close out of the people in the db to the picture we insert when clocking in.
